@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css"/>
+    <title>IT Flowy</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Blok 1: Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark navbar-transparent navbar-scroll fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="" width="30"
+          class="d-inline-block align-text-top me-3">
+         IT Flowy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link active" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="project.html">Project</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+<!-- Section 1: Web Development Tips (Jumbotron) -->
+    <section class="jumbotron">
+      <div class="jumbotron-content">
+          <h1>Web Development Tips</h1>
+          <p>Optimize your coding practices and stay updated with the latest in web development.</p>
+          <a href="https://spdload.com/blog/how-to-become-a-better-web-developer/" class="btn btn-custom">Baca Lebih Lanjut</a>
+      </div>
+  </section>
+
+  <!-- Section 2: Mobile App Design Trends -->
+<section class="section-trends">
+  <div class="container">
+      <h2>Mobile App Design Trends</h2>
+      <p class="lead">Discover the latest trends in mobile app design and enhance your app’s user experience.</p>
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+              <img src="img/blog-2.webp" alt="Mobile App Design" class="trend-image"> <!-- Ganti path dengan jalur gambar -->
+              <p class="mt-3">Stay ahead of the curve with these essential design trends for mobile applications.</p>
+              <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#designTrendsModal">
+                  Learn More
+              </button>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Modal for Mobile App Design Trends -->
+<div class="modal fade" id="designTrendsModal" tabindex="-1" aria-labelledby="designTrendsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="designTrendsModalLabel">Mobile App Design Trends</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Explore current mobile app design trends that prioritize user experience, including:</p>
+              <ul>
+                  <li>Minimalistic and clean UI</li>
+                  <li>Dark mode compatibility</li>
+                  <li>Augmented reality (AR) integration</li>
+                  <li>Micro-interactions for improved engagement</li>
+                  <li>Personalized animations and transitions</li>
+              </ul>
+              <p>Stay updated and incorporate these elements to make your app more engaging and user-friendly.</p>
+          </div>
+          <div class="modal-footer">
+              <a href="https://www.quytech.com/blog/top-ui-design-trends-to-make-your-app-more-intuitive/" class="btn btn-primary">Read Full Article</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Section 3: Cloud Computing Basics with Two Columns -->
+<section class="cloud-section">
+  <div class="container">
+      <div class="row align-items-center">
+          <!-- Left Column with Image -->
+          <div class="col-md-6">
+              <img src="img/blog-3.webp" alt="Cloud Computing" class="cloud-image">
+          </div>
+          <!-- Right Column with Text and Button -->
+          <div class="col-md-6">
+              <h2>Cloud Computing Basics</h2>
+              <p>Understand the essentials of cloud computing and discover how it can revolutionize your business operations by providing scalable, flexible, and cost-effective solutions.</p>
+              <ul>
+                  <li><strong>Scalability:</strong> Quickly adapt to changes in demand.</li>
+                  <li><strong>Cost Efficiency:</strong> Reduce overhead by paying only for what you use.</li>
+                  <li><strong>Accessibility:</strong> Access data and applications from anywhere.</li>
+                  <li><strong>Security:</strong> Safeguard data with advanced protection.</li>
+              </ul>
+              <button type="button" class="btn btn-cloud" data-bs-toggle="modal" data-bs-target="#cloudModal">
+                  Learn More
+              </button>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Modal for Cloud Computing Basics -->
+<div class="modal fade" id="cloudModal" tabindex="-1" aria-labelledby="cloudModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="cloudModalLabel">Introduction to Cloud Computing</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Explore the core principles of cloud computing that provide modern solutions for business challenges, including:</p>
+              <ul>
+                  <li>Seamless scalability to meet changing demands</li>
+                  <li>Reduced costs with a pay-as-you-go model</li>
+                  <li>Anywhere access to data and resources</li>
+                  <li>Robust security to protect sensitive information</li>
+              </ul>
+              <p>Utilize these principles to enhance efficiency, flexibility, and security within your organization.</p>
+          </div>
+          <div class="modal-footer">
+              <a href="https://www.cleo.com/blog/knowledge-base-what-is-cloud-computing" class="btn btn-info">Read Full Guide</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Section 4: Cybersecurity Awareness -->
+<section class="cybersecurity-section">
+    <div class="container cybersecurity-content">
+        <div class="text-center mb-4">
+            <i class="fas fa-shield-alt icon-security"></i>
+        </div>
+        <h2>Cybersecurity Awareness</h2>
+        <p>Learn how to protect your business from cyber threats and maintain a secure digital environment.</p>
+        <button type="button" class="btn btn-cybersecurity" data-bs-toggle="modal" data-bs-target="#cybersecurityModal">
+            Learn More
+        </button>
+    </div>
+</section>
+
+<!-- Modal for Cybersecurity Awareness -->
+<div class="modal fade" id="cybersecurityModal" tabindex="-1" aria-labelledby="cybersecurityModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cybersecurityModalLabel">Cybersecurity Awareness Tips</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Understanding and addressing cybersecurity risks is essential for protecting your business. Key strategies include:</p>
+                <ul>
+                    <li><strong>Use Strong Passwords:</strong> Avoid common passwords and use combinations of letters, numbers, and symbols.</li>
+                    <li><strong>Enable Two-Factor Authentication:</strong> Add an extra layer of security to your accounts.</li>
+                    <li><strong>Educate Your Team:</strong> Regularly train employees on recognizing phishing and social engineering tactics.</li>
+                    <li><strong>Regular Software Updates:</strong> Keep all systems and applications up-to-date to close security gaps.</li>
+                </ul>
+                <p>Investing in cybersecurity helps ensure the safety of sensitive information and the continuity of your operations.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://www.cyberacademy.id/blog" class="btn btn-warning">Read Full Guide</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section 6: Software Development Lifecycle -->
+<section class="sdlc-section">
+    <div class="container">
+        <h2>Software Development Lifecycle</h2>
+        <p>Explore the essential phases of software development to ensure quality and efficiency.</p>
+        
+        <div class="row g-4 mt-4">
+            <!-- Phase 1: Planning -->
+            <div class="col-md-4">
+                <div class="phase">
+                    <i class="fas fa-chart-line icon-phase"></i>
+                    <h4 class="phase-title">Planning</h4>
+                    <p>Establish goals, define scope, and develop a strategic plan for the project.</p>
+                </div>
+            </div>
+            <!-- Phase 2: Analysis -->
+            <div class="col-md-4">
+                <div class="phase">
+                    <i class="fas fa-search icon-phase"></i>
+                    <h4 class="phase-title">Analysis</h4>
+                    <p>Analyze user requirements, identify risks, and establish system specifications.</p>
+                </div>
+            </div>
+            <!-- Phase 3: Design -->
+            <div class="col-md-4">
+                <div class="phase">
+                    <i class="fas fa-pencil-ruler icon-phase"></i>
+                    <h4 class="phase-title">Design</h4>
+                    <p>Create blueprints and prototypes to shape the user interface and system architecture.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+            <!-- Phase 4: Development -->
+            <div class="col-md-4">
+                <div class="phase">
+                    <i class="fas fa-code icon-phase"></i>
+                    <h4 class="phase-title">Development</h4>
+                    <p>Convert designs into a functional software product through coding and configuration.</p>
+                </div>
+            </div>
+            <!-- Phase 5: Testing -->
+            <div class="col-md-4">
+                <div class="phase">
+                    <i class="fas fa-bug icon-phase"></i>
+                    <h4 class="phase-title">Testing</h4>
+                    <p>Perform tests to detect bugs, ensure quality, and validate functionality.</p>
+                </div>
+            </div>
+            <!-- Phase 6: Deployment -->
+            <div class="col-md-4">
+                <div class="phase">
+                    <i class="fas fa-cloud-upload-alt icon-phase"></i>
+                    <h4 class="phase-title">Deployment</h4>
+                    <p>Release the software to production and ensure it's operational in the live environment.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-4 justify-content-center">
+            <!-- Phase 7: Maintenance -->
+            <div class="col-md-4">
+                <div class="phase">
+                    <i class="fas fa-tools icon-phase"></i>
+                    <h4 class="phase-title">Maintenance</h4>
+                    <p>Continuously monitor, update, and enhance the software to adapt to changing needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+
+<!-- Tombol Back to Top -->
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<!-- Icon WhatsApp -->
+<div id="whatsappChat" onclick="openWhatsAppChat()">
+    <i class="fab fa-whatsapp"></i>
+</div>
+
+<!-- JavaScript untuk Fungsionalitas -->
+<script>
+    // Fungsi untuk mengontrol navbar dan tombol "Back to Top"
+    window.onscroll = function() {
+        var navbar = document.getElementById("navbar");
+        var backToTop = document.getElementById("backToTop");
+        
+        // Mengubah navbar saat scroll
+        if (window.scrollY > 50) {
+            navbar.classList.remove("navbar-transparent");
+            navbar.classList.add("navbar-scroll");
+        } else {
+            navbar.classList.remove("navbar-scroll");
+            navbar.classList.add("navbar-transparent");
+        }
+
+        // Menampilkan tombol "Back to Top" saat scroll > 300px
+        if (window.scrollY > 300) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
+    };
+
+    // Fungsi untuk scroll ke atas
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Fungsi untuk membuka chat WhatsApp (tambahkan URL sesuai dengan nomor WhatsApp)
+    function openWhatsAppChat() {
+        window.open("https://wa.me/628998356209", "_blank");
+    }
+</script>
+    
+      <!-- Blok 10: Footer -->
+<footer class="footer py-4 bg-dark text-white text-center">
+    <div class="container">
+        <p>&copy; 2024 IT Flowy. All rights reserved.</p>
+    </div>
+  </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+    </html>

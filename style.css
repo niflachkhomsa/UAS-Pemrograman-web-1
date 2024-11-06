@@ -1,0 +1,724 @@
+body {
+    background-color: #faf3e1;
+    font-family: 'Proppins', sans-serif
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+}
+.navbar {
+    transition: background-color 0.3s;
+}
+.navbar-transparent {
+    background-color: transparent;
+}
+.navbar-scroll {
+    background-color: #000; /* Warna latar belakang saat scroll */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow agar terlihat lebih jelas */
+}
+.nav-link {
+    font-size: 16px;
+}
+.nav-link.active {
+    font-weight: 700;
+    border-bottom: 1px solid #ffff; 
+}
+.button-primary {
+    width: 133px;
+    height: 40px;
+    background-color: rgb(26, 47, 232);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+#about {
+    background-color: #feccb5;
+}
+#hero {
+    height: 100vh;
+    background-image: url(img/hero-banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#hero:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#hero .container-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* ABOUT */
+#about-us {
+    background-color: #feccb5;
+    padding: 4rem 0;
+}
+.about-us-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+.about-us-section p.lead {
+    font-size: 1.2rem;
+    color: #666;
+}
+.about-us-section ul {
+    margin-top: 1.5rem;
+    padding-left: 0;
+}
+.about-us-section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.about-us-section ul li i {
+    margin-right: 10px;
+    color: #007bff;
+}
+.company-overview {
+    background-image: url(img/company-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative;
+}
+.company-overview::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.company-overview .container {
+    position: relative;
+    z-index: 2;
+}
+.company-overview h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #f9f9f9;
+}
+.company-overview p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #e9e9e9;
+}
+.company-overview .btn-primary {
+    background-color: #ff5722;
+    border-color: #ff5722;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.company-overview .btn-primary:hover {
+    background-color: #e64a19;
+    border-color: #e64a19;
+}
+/* Gaya untuk Section Misi dan Visi */
+.mission-vision h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+.mission-vision .mission-vision-box-1 {
+    background-color: #9bd3d0;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+.mission-vision .mission-vision-box-2 {
+    background-color: #feccb5;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+.mission-vision .mission-vision-box:hover {
+    transform: scale(1.05);
+}
+.mission-vision i {
+    color: #007bff;
+}
+.mission-vision h3 {
+    font-size: 1.75rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+.mission-vision p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+/* Gaya Section Core Values */
+.core-values {
+    background-color: #fec447;
+}
+.core-values h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+}
+.core-value-box {
+    background-color: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 25px;
+}
+.core-value-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.core-value-box i {
+    color: #007bff; 
+}
+.core-value-box h4 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.core-value-box p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+/* Gaya Section Achievements */
+.achievements {
+    background-color: #9bd3d0;
+}
+.achievements h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+}
+.achievement-box {
+    background-color: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 25px;
+}
+.achievement-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.achievement-box i {
+    color: #007bff;
+}
+.achievement-box h4 {
+    font-size: 2.5rem;
+    color: #444;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.achievement-box p {
+    font-size: 1.1rem;
+    color: #666;
+}
+.container-hero {
+    padding-top: 30vh;
+    z-index: 1;
+}
+.carousel-caption h5 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #fff;
+}
+.carousel-caption p {
+    font-size: 1.25rem;
+    color: #e0e0e0;
+    margin-top: 0.5rem;
+}
+/* Gaya section services */
+.services-section .service-box-1 {
+    background-color: #9bd3d0;
+    border-radius: 8px;
+    padding: 20px;
+    transition: 0.3s;
+}
+.services-section .service-box-2 {
+    background-color: #feccb5;
+    border-radius: 8px;
+    padding: 20px;
+    transition: 0.3s;
+}
+.services-section .service-box-3 {
+    background-color: #fec447;
+    border-radius: 8px;
+    padding: 20px;
+    transition: 0.3s;
+}
+.service-box-1 h5 {
+    font-weight: bold;
+}
+.service-box-2 h5 {
+    font-weight: bold;
+}
+.service-box-3 h5 {
+    font-weight: bold;
+}
+.service-box-1 i, .service-box-2 i, .service-box-3 i {
+    color: #ffff;
+    margin-bottom: 1rem;
+}
+.services-section .service-box-1:hover {
+    background-color: #e9ecef;
+    transform: scale(1.05);
+}
+.services-section .service-box-2:hover {
+    background-color: #e9ecef;
+    transform: scale(1.05);
+}
+.services-section .service-box-3:hover {
+    background-color: #e9ecef;
+    transform: scale(1.05);
+}
+/* Gaya section blog */
+.jumbotron {
+    background-image: url(img/blog-1.jpg); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+}
+.jumbotron::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.jumbotron-content {
+    position: relative;
+    z-index: 1;
+}
+.jumbotron h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.jumbotron p {
+    font-size: 1.25rem;
+}
+.btn-custom {
+    background-color: #007bff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+.section-trends {
+    padding: 60px 0;
+    background-color: #9bd3d0;
+    text-align: center;
+}
+.trend-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.btn-custom {
+    background-color: #28a745;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.btn-custom:hover {
+    background-color: #218838;
+}
+.cloud-section {
+    padding: 60px 0;
+    background-color: #faf3e1;
+}
+.cloud-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.cloud-section p {
+    font-size: 1.1rem;
+    color: #333;
+}
+.cloud-image {
+    width: 100%;
+    border-radius: 8px;
+}
+.btn-cloud {
+    background-color: #17a2b8;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.btn-cloud:hover {
+    background-color: #138496;
+}
+.cybersecurity-section {
+    background-color: #747372;
+    color: #f8f9fa;
+    padding: 60px 0;
+    position: relative;
+    text-align: center;
+}
+.cybersecurity-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(img/blog-4.jpeg); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 0;
+}
+.cybersecurity-content {
+    position: relative;
+    z-index: 1;
+}
+.cybersecurity-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.cybersecurity-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.btn-cybersecurity {
+    background-color: #f39c12;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.btn-cybersecurity:hover {
+    background-color: #e67e22;
+}
+.icon-security {
+    font-size: 3rem;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+.sdlc-section {
+    background-color: #feccb5;
+    padding: 60px 0;
+    text-align: center;
+}
+.sdlc-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.phase {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+}
+.phase:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.icon-phase {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+.phase-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Gaya section our-team */
+#our-team h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+.team-member {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.team-member:hover {
+    transform: translateY(-10px);
+}
+.team-member h5 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    color: #007bff;
+}
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+.social-icons a {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #007bff;
+}
+/* Gaya section why-choose-us */
+#why-choose-us {
+    background-color: #fec447;
+}
+#why-choose-us .count-box {
+    border: 2px solid #ffff; 
+    border-radius: 10px;      
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+#why-choose-us .count-box p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+#why-choose-us .count-box .description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+/* Gaya section project */
+.card-1 {
+    background-color: #9bd3d0;
+}
+.card-2 {
+    background-color: #feccb5;
+}
+.card-3 {
+    background-color: #fec447;
+}
+.card img {
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+.card-text {
+    color: #6c757d;
+}
+.text-muted {
+    font-size: 0.9rem;
+}
+.project-section {
+    padding: 60px 0;
+    background: #f0f2f5;
+}
+.project-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+.project-box:hover {
+    transform: translateY(-5px);
+}
+.project-image {
+    width: 50%;
+    height: 30%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.project-section-1 {
+    padding: 50px 0;
+    background-color: #9bd3d0;
+    text-align: center;
+}
+.project-section-2 {
+    padding: 50px 0;
+    background-color: #feccb5;
+    text-align: center;
+}
+.project-section-3 {
+    padding: 50px 0;
+    background-color: #fec447;
+    text-align: center;
+}
+.project-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+.project-description {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+.project-table {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+/* Gaya section testimonials */
+#testimonials {
+    background-color: #9bd3d0;
+}
+#testimonials .testimonial-box {
+    border-radius: 10px;
+    
+    color: #333333;
+    text-align: center;
+}
+#testimonials .testimonial-box img {
+    border: 3px solid #f1c40f;
+    padding: 5px;
+}
+#testimonials .testimonial-text {
+    font-size: 1rem;
+    font-style: italic;
+    color: #555555;
+}
+#testimonials h5 {
+    font-weight: bold;
+    color: #333333;
+}
+#testimonials .position {
+    color: #888888;
+    font-size: 0.9rem;
+    margin-top: -10px;
+}
+/* Gaya section contact */
+#contact {
+    background-color: #faf3e1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#contact .map-container iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 500px;
+    width: 100%;
+}
+.contact-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #faf3e1;
+}
+.contact-section-1 {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #feccb5;
+}
+.contact-section-2 {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #9bd3d0;
+}
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+.contact-card {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.form-control, .btn-primary {
+    border-radius: 30px;
+}
+/* back on top */
+#backToTop {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    display: none; 
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+#backToTop:hover {
+    background-color: #ff4500;
+}
+#backToTop.show {
+    display: block;
+}
+
+/* WhatsApp Icon Styles */
+#whatsappChat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    z-index: 1000;
+    text-decoration: none;
+}
+#whatsappChat:hover {
+    background-color: #1ebd5a;
+}
+
+.footer {
+    background-color: #343a40;
+}
